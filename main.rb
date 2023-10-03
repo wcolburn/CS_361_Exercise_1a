@@ -10,6 +10,9 @@ class Player
 
 end
 
+players = Array.new
 
-player = Player.new("Player 1", 10)
-player.print_self
+(1..50).each { |i|
+  player = Player.new("Player #{i}", 10)
+  players.push(player)
+}
